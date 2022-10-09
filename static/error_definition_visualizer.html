@@ -1,0 +1,63 @@
+<div style="font-size: 20px;">
+    <ul style="list-style-type:none; color: navy;">
+        <li><span style="height: 10px; width: 20px; background-color: #9437FF70; display: inline-block;"></span><span onclick="showErrorDescription('error-definition-character')" 
+            class="error-type-name" id="error-type-name-character"> <a href='#' style="text-decoration: none;">New Person not Introduced </a> </span> </li>
+        <li><span style="height: 10px; width: 20px; background-color: #FF40FF70; display: inline-block;"></span><span onclick="showErrorDescription('error-definition-event')" class="error-type-name" id="error-type-name-event"> <a href='#' style="text-decoration: none;">Missing Information about an Event/Object</a></span></li>
+        <li><span style="height: 10px; width: 20px; background-color: #00905170; display: inline-block;"></span><span onclick="showErrorDescription('error-definition-scene')" 
+            class="error-type-name" id="error-type-name-scene"> <a href='#' style="text-decoration: none;">Abrupt Transition from the Previous Scene</a></span></li>
+        <li><span style="height: 10px; width: 20px; background-color: #FF930070; display: inline-block;"></span><span onclick="showErrorDescription('error-definition-coref')" 
+            class="error-type-name" id="error-type-name-coref"> <a href='#' style="text-decoration: none;">Unclear Coreference</a></span></li>
+        <li><span style="height: 10px; width: 20px; background-color: #0096FF70; display: inline-block;"></span><span onclick="showErrorDescription('error-definition-repitition')"
+            class="error-type-name" id="error-type-name-repitition"> <a href='#' style="text-decoration: none;">Repetition</a></span></li>
+        <li><span style="height: 10px; width: 20px; background-color: #F81E1890; display: inline-block;"></span><span onclick="showErrorDescription('error-definition-inconsistent')" class="error-type-name" id="error-type-name-inconsistent"> <a href='#' style="text-decoration: none;">Inconsistent</a></span></li>
+        <li><span style="height: 10px; width: 20px; background-color: #D4FB79; display: inline-block;"></span><span onclick="showErrorDescription('error-definition-grammar')" 
+            class="error-type-name" id="error-type-name-grammar"> <a href='#' style="text-decoration: none;">Ungrammatical/Nonsensical Text</a></span></li>
+    </ul>
+
+
+
+    <div class="error-type-definition" id="error-definition-character" style="display: none; font-size: 14px;">
+        <h4> New Person not Introduced </h4>
+        These refer to coherence errors where a new person is introduced into the narrative WITHOUT providing any background about the person, or their relation with other characters in the story.
+    </div>
+
+    <div class="error-type-definition" id="error-definition-event" style="display: none; font-size: 14px;">
+        <h4>Missing Information about an Event/Object</h4>
+        These refer to coherence errors where an event or object is mentioned for the first time, but the phrasing strongly implies some context is missing to understand this event/object and that it must have been introduced previously.  
+
+    </div>
+
+    <div class="error-type-definition" id="error-definition-scene" style="display: none; font-size: 14px;">
+        <h4>Abrupt Transition from the Previous Scene</h4>
+        These refer to coherence errors where there is a sudden shift in the <em>setting</em> or the narrative in the story. These often happen in two scenarios: <br>
+                    1. There is an <b>abrupt</b> change in the people/characters being discussed and/or an <b>abrupt</b> change in the surroundings/event. <br>
+                    2. Scenarios where the previous scene's phrasing strongly implies that more information/events are forthcoming, but the previous scene gets abruptly cut off and a completely new scene starts.<br><br>
+        <b> Annotators are asked to selected whole sentences for this error type. </b>
+    </div>
+
+
+    <div class="error-type-definition" id="error-definition-coref" style="display: none; font-size: 14px;">
+        <h4>Unclear Coreference</h4>
+        These refer to errors where it is unclear who/what a pronoun or refers to. 
+    </div>
+
+
+    <div class="error-type-definition" id="error-definition-repitition" style="display: none; font-size: 14px;">
+        <h4>Repetition of Content</h4>
+        These refer to spans where content is repeated. <br><br>
+        <span style="color:red">Note:</span> For these, annotators also highlight the 'previous' span that contains the same text/content as the selected span. This text is underlined and bolded on hovering on the "Repetition" error type in the legend.
+ 
+    </div>
+
+    <div class="error-type-definition" id="error-definition-inconsistent" style="display: none; font-size: 14px;">
+        <h4> Inconsistent</h4>
+        These refer to text spans that contradict previous content (either in the context or the next segment box itself.) <br><br>
+        <span style="color:red">Note:</span> For these, annotators also highlight the 'previous' span that contradicts the selected span. This text is underlined and bolded on hovering on the "Inconsistent" error type in the legend.
+    </div>
+
+    <div class="error-type-definition" id="error-definition-grammar" style="display: none; font-size: 14px;">
+        <h4> Ungrammatical/Nonsensical</h4>
+        These refer to text spans that have grammar errors. Also included in this category are cases where there are obvious commonsense errors or the text does not make any sense at all. <br><br>
+    </div>
+
+</div>

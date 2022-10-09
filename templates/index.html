@@ -1,0 +1,75 @@
+<html>
+<meta charset="utf-8">
+<head>
+	<title>Coherence annotation</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/static/js/annotation.js"></script>
+
+    <link rel="stylesheet" href="/static/css/general.css">
+    <link rel="stylesheet" href="/static/css/annotation.css">
+</head>
+
+<body>
+    <div id="next-sentence-id" hidden="true">{{sentence_id}}</div>
+    <div id="total-sentence-ids" hidden="true">{{total_sentence_ids}}</div>
+    <div id="story-id" hidden="true">{{story_id}}</div>
+    <div class="container">
+        <div class="outline">
+            <div id="context_and_sentence">{{context_html}}</div>
+            <span class="step2 step4" hidden="true" style="color:green; font-size: 20;">✓</span>
+            <span class="ttu">Step 1: </span> Highlight Error Span (from Current Segment) 
+            <input readonly type="text" id="highlight-span-1" class="highlight-span">
+            
+            
+            <div class="step2" hidden="true">
+                <span class="step3 step4" style="color:green; font-size: 20;" hidden="true">✓</span>
+                <span class="ttu"> Step 2: </span> Choose Error Type 
+                <div id='error-types-buttons'></div>
+
+            </div>
+
+            <div class="step3" hidden="true">
+                <span class="step4" style="color:green; font-size: 20;" hidden="true">✓</span>
+                <span class="ttu">Step 3: </span> Highlight Earlier Span
+                <input readonly type="text" id="highlight-span-2" class="highlight-span">
+            </div>
+
+            <div class="step4" hidden="true">
+                <span class="ttu">Other comments/ feedback (Optional): </span><input type="text" id="feedback-span" class="highlight-span">
+                <br>
+                <button id="add-button">Add</button>
+            </div>
+
+            <br>
+            <button id="previous-button">Previous sentence</button>
+            <button id="next-button"> No-more errors. Go to next segment.</button>
+            <form action="{{url_for('submitform')}}" method = "POST">
+                <input type="text" name="all-annotations" id="all-annotations" hidden="true"/>
+                <!--Annotator: <input type="text" name="annotator" id="annotator"/>-->
+                <button disabled id="submit-button" type="submit">Submit</button>
+            </form>
+
+            <br><br>
+            <b class="ttu"> Previous Annotations: </b> <br>
+            <table id="annotations-table">
+            </table>
+        </div>
+        <div class="tutorial-tldr">
+            <h3> Tutorial tldr;</h3>
+
+            <h4>Steps for annotating an Error: </h4>
+            <ul>
+                <li><b>Step 1</b>: Highlight Error Span</li>
+                <li><b>Step 2</b>: Select Error Type (Definitions given below)</li>
+                <li><b>Step 2.5</b>: For Paired Errors, select earlier span.</li>
+                <li><b>Step 3</b>: (Optional) Give feedback</li>
+                <li><b>Step 4</b>: Click on Add</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
+

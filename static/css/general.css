@@ -1,0 +1,249 @@
+html * {
+    font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+img {
+	max-width:60%;
+	max-height:80%;
+	margin-left: 20%; 
+	margin-right: 20%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.outline {
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 18px;
+	flex-grow: 1;
+}
+
+.panel-heading {
+	background-color: #4682B4;
+	border-radius: 5px;
+	padding: 5px;
+	color: white;
+}
+
+.tutorial-content {
+	font-size: 18px;
+	margin: 10px;
+}
+
+
+.error-type-definition {
+	text-align: left;
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.tutorial-box {
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.content-box {
+	border: 1px solid black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.pt-3-half { 
+	padding-top: 1.4rem; 
+}
+
+.highlighted {
+	background-color: #DEDEDE;
+}
+
+.container {
+	display: flex;
+}
+
+.tutorial-tldr {
+    width: 30%;
+}
+
+.summary-box {
+	width: 70%;
+}
+
+#summary-display-box {
+	height: 800px;
+	overflow: scroll;
+}
+
+
+/*
+.selection-scene-span{
+ border-bottom: 2px solid #009051;
+}*/
+
+
+#model-dropdown {
+   width    : 200px;
+   padding: 5px;
+   margin-top: 20px;
+   border-radius   : 0 1px 2px 2px;
+   box-shadow      : 0 1px 2px rgb(204, 204, 204);
+}
+
+#ID-dropdown {
+   width    : 200px;
+   padding: 5px;
+   margin-top: 20px;
+   border-radius   : 0 1px 2px 2px;
+   box-shadow      : 0 1px 2px rgb(204, 204, 204);
+}
+
+
+.dropdown .select {
+   cursor : pointer;
+   display: block;
+   padding: 7px
+}
+
+.dropdown .select>i {
+   font-size  : 15px;
+   /* color   : #888; */
+   cursor     : pointer;
+   transition : all .3s ease-in-out;
+   float      : right;
+   line-height: 25px
+}
+
+.dropdown:hover {
+   box-shadow: 0 0 4px rgb(204, 204, 204)
+}
+
+.dropdown:active {
+   background-color: #f8f8f8
+}
+
+.dropdown.active:hover,
+.dropdown.active {
+   box-shadow      : 0 0 4px rgb(204, 204, 204);
+   border-radius   : 2px 2px 0 0;
+   background-color: #f8f8f8
+}
+
+.dropdown.active .select>i {
+   transform: rotate(-90deg)
+}
+
+.dropdown .dropdown-menu {
+   position        : absolute;
+   background-color: #fff;
+   width           : 200px;
+   margin-top      : 1px;
+   box-shadow      : 0 1px 2px rgb(204, 204, 204);
+   border-radius   : 0 1px 2px 2px;
+   overflow        : hidden;
+   display         : none;
+   overflow-y      : auto;
+}
+
+.dropdown .dropdown-menu li {
+   padding   : 10px;
+   transition: all .2s ease-in-out;
+   cursor    : pointer
+}
+
+.dropdown .dropdown-menu {
+   padding   : 0;
+   list-style: none
+}
+
+.dropdown .dropdown-menu li:hover {
+   background-color: #f2f2f2
+}
+
+.dropdown .dropdown-menu li:active {
+   background-color: #e2e2e2
+}
+
+.boldFont{
+	font-weight: 900;
+	font-size: larger;
+}
+
+.underlineAntecedant {
+	text-decoration: underline;
+}
+
+#navbar-content {
+    max-width: 1200px;
+}
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*TOOLTIPS*/
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+visibility: hidden;
+    position: absolute;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+ }
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*Bottom*/
+.tooltip-bottom {
+    top: 135%;
+    left: 50%;
+    margin-left: -60px;
+}
+.tooltip-bottom:after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+    display:block;
+}

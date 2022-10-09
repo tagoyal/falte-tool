@@ -1,0 +1,14 @@
+<div>
+    <div class="content-box" id ='context-content-box'>
+        <b> Context: </b> <br>
+        <div id='context-box'>
+	        {% for sentence in context %}
+			    {{ sentence }} <br><br>
+			{% endfor %} 
+		</div>
+    </div>
+    <div class="content-box" id='next-sentence-content-box'>
+        <b> Current Segment: </b> <br>
+        <p id='next-sentence-box'> {{next_sentence}} </p>
+    </div>
+</div>

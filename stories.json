@@ -1,0 +1,21 @@
+{
+    "test0":
+    {
+        "sentences":
+        [
+            "<span class = \"ne ne-4\"> John</span><span class = \"ne ne-0\"> Fenwick</span>, an aspiring artist, accepts a loan from Mr.<span class = \"ne ne-10\"> Morrison</span> to move to London to pursue his art career. In London, he impresses several wealthy art collectors with his work.",
+            "<span class = \"ne ne-0\"> Fenwick</span> becomes infatuated with<span class = \"ne ne-12\"> Madame</span> de<span class = \"ne ne-5\"> Pastourelles</span>, a beautiful and intelligent artist. He also writes a letter to Mrs.<span class = \"ne ne-10\"> Morrison</span> expressing his sympathy for her husband\"s suicide.",
+            "<span class = \"ne ne-7\"> Phoebe</span> becomes frightened when a tramp threatens to kill her and her child.<span class = \"ne ne-0\"> Fenwick</span> promises to hire a servant to protect her.",
+            "<span class = \"ne ne-0\"> Fenwick</span> and<span class = \"ne ne-12\"> Madame</span> de<span class = \"ne ne-5\"> Pastourelles</span> argue about modern art. He becomes irritated when he sees her walking with<span class = \"ne ne-1\"> Welby</span>."
+        ]
+    },
+    "test1":
+    {
+        "sentences":
+        [
+            "<span class = \"ne ne-13\">Mr.</span> <span class = \"ne ne-8\">Bingley</span>, a wealthy man, leases Netherfield Park and is well-liked by everyone. <span class = \"ne ne-0\">Jane</span> is attracted to him, and <span class = \"ne ne-17\">Elizabeth</span> thinks he might feel the same way about her. <span class = \"ne ne-15\">Darcy</span> begins to notice <span class = \"ne ne-17\">Elizabeth</span>\"s intelligence and starts to pay attention to her.",
+            "<span class = \"ne ne-13\">Mr.</span> <span class = \"ne ne-1\">Collins</span>, a clergyman, arrives to court one of the <span class = \"ne ne-16\">Bennet</span> girls. He decides to choose <span class = \"ne ne-17\">Elizabeth</span>, and after a conversation with Mrs. <span class = \"ne ne-16\">Bennet</span>, he changes his mind to <span class = \"ne ne-0\">Jane</span>.",
+            "<span class = \"ne ne-15\">Darcy</span> suddenly asks <span class = \"ne ne-17\">Elizabeth</span> for her hand in marriage, and she accepts without thinking."
+        ]
+    }
+}
